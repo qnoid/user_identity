@@ -10,6 +10,6 @@ class EmailVerificationMailer < ActionMailer::Base
 
 	def welcome(user)
 		@user = user
-		mail(:to => user.email, :subject => "Welcome to thebox!")
+		mail(:to => user.email, :subject => "Welcome!")
 	end
 end
