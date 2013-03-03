@@ -1,0 +1,8 @@
+.bundle
+.hg/*
+db/*.sqlite3
+log/*.log
+tmp/
+.hgignore
+.DS_Store
+*.swp
