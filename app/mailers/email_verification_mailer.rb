@@ -4,7 +4,7 @@ class EmailVerificationMailer < ActionMailer::Base
 	def verify(user, residence)
 		@user = user
     @residence = residence
-		@url = "http://immense-coast-2846.herokuapp.com/users/verify"
+		@url = "http://user-identity-nsconf.herokuapp.com/users/verify"
 		mail(:to => user.email, :subject => "Please verify your email")
 	end
 

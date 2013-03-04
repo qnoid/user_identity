@@ -3,8 +3,6 @@ require 'digest/sha1'
 class UsersController < ApplicationController
   respond_to :json
 
-#Sending out an email should only take a fraction of a second, but if you are planning on sending out many emails, or you have a slow domain resolution service, you might want to investigate using a background process like Delayed Job.
-
 	# Creates a new user and a token for the given user[email] and user[residence].
 	# Sends an email to the user with the created token to verify her.
   # The url to verify the user callbacks to #verify with the token.
